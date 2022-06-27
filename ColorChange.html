@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #myBtn {
+                background-color: white;
+                size: 100px;
+                font-size: large;
+            }
+        </style>
+    </head>
+    <body style = "text-align:center;">
+        <button id = "myBtn" onclick = "colorChange()"> Press Me! </button>
+        <script>
+            function colorChange() {
+                let randomColor = Math.floor(Math.random()*16777214).toString(16);
+                document.body.style.backgroundColor = "#" + randomColor;
+            }
+        </script>
+    </body>
+</html>
